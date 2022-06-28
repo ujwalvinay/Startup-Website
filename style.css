@@ -301,3 +301,11 @@ h5
         width: 12rem;
     }
 }
+
+
+/* Footer Section */
+footer a,li
+{
+    text-decoration: none;
+    list-style: none;
+}
