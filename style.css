@@ -93,6 +93,10 @@ h1
     {
         width: 100%;
     }
+    .navbar
+{
+    padding: 0 ;
+}
 }
 /* Problem Section */
 #problem-h1
@@ -126,7 +130,7 @@ h1
 /* Service Section */
 .service-row
 {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .card-body
 {
@@ -157,6 +161,18 @@ h1
 
 
 @media screen and (max-width:540px) {
+    .card-text  
+    {
+        width: 90%;
+    }
+    .card
+    {
+        margin: auto;
+    }
+    .card-body
+    {
+        padding: 3rem 1rem;
+    }
     .service-row
     {
         gap: 2rem;
