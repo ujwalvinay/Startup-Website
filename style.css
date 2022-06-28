@@ -3,6 +3,12 @@
     padding: 0;
     margin: 0;
 }
+body
+{
+    
+    overflow-x: hidden;
+}
+/* Title Section */
 
 .title-section
 {
@@ -67,6 +73,27 @@ h1
     padding: 1rem 0;
 }
 
+@media screen and (max-width:540px) {
+    .banner p
+    {
+        width: 90%;
+        padding: 1rem;
+    }
+    .banner h1
+    {
+        font-size: 35px;
+        width: 95%;
+        margin: auto;
+    }
+    .title-section
+    {
+        background-image: none;
+    }
+    .banner-img
+    {
+        width: 100%;
+    }
+}
 /* Problem Section */
 #problem-h1
 {
@@ -84,6 +111,17 @@ h1
     width: 40%;
 }
 
+@media screen and (max-width:540px) {
+    #problem-h1
+    {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    #data
+    {
+        width: 90%;
+    }
+}
 
 /* Service Section */
 .service-row
@@ -117,10 +155,149 @@ h1
     width: 20px;
 }
 
+
+@media screen and (max-width:540px) {
+    .service-row
+    {
+        gap: 2rem;
+    }
+    .service-row p
+    {
+        width: 90%;
+    }
+    #problem-p
+    {
+        width: 90%;
+    }
+    .service-section h1
+    {
+        font-size: 35px;
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
 /* Support Section */
 .support-h1
 {
     font-weight: 600;
     font-size: 40px;
     width: 70%;
+}
+.support-section
+{
+    width: 80vw;
+    margin: auto;
+}
+.support-section p
+{
+    width: 70%;
+}
+@media screen and (max-width:540px) {
+    .support-section
+    {
+        text-align: center;
+    }
+    .support-section p
+    {
+        width: 100%;
+    }
+}
+
+/* Service Section */
+.service-section-2
+{
+    width: 70%;
+    padding-bottom: 2rem;
+}
+.service-section-2 p
+{
+    width: 80%;
+    padding-bottom: 1rem;
+}
+.service-2-text
+{
+    padding-left: 2rem;
+}
+
+@media screen and (max-width:540px) {
+    .service-section-2
+    {
+        text-align: center;
+    }
+    .service-2-img
+    {
+        width: 100%;
+    }
+    .service-section-2 p
+    {
+        width: 100%;
+    }
+    .support-h1
+    {
+        width: 100%;
+        font-size: 7vw;
+        font-weight: 700;
+        padding: 1rem 0;
+    }
+    .signup-1
+    {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Pricing Section */
+.pricing-flex
+{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+.price
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end   ;
+}
+.price p
+{
+    width: auto;
+}
+h5
+{
+    text-align: center;
+}
+.card-text
+{
+    width: 90%;
+    text-align: center;
+}
+.card-button
+{
+    margin: auto;
+    text-align: center;
+    background-color: #5d2bd1;
+    color: white;
+    font-weight: 600;
+}
+.card-button:hover
+{
+    background-color: #A149FA;
+}
+.card-text-body
+{
+    text-align: center;
+}
+
+@media screen and (max-width:540px) {
+    .pricing-flex
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card
+    {
+        width: 12rem;
+    }
 }
